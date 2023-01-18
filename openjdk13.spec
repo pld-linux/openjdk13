@@ -25,12 +25,12 @@
 Summary:	Open-source implementation of the Java Platform, Standard Edition
 Summary(pl.UTF-8):	Wolnoźródłowa implementacja Java 13 SE
 Name:		openjdk13
-Version:	13.0.13
+Version:	13.0.14
 Release:	1
 License:	GPL v2
 Group:		Development/Languages/Java
 Source0:	https://github.com/openjdk/jdk13u/archive/jdk-%{version}-ga/%{name}-%{version}.tar.gz
-# Source0-md5:	45ee32c5a478fcffc34f19c18ea1e79d
+# Source0-md5:	0140f83eb9c664e47468566d807daf2f
 Source10:	make-cacerts.sh
 Patch0:		no_optflags.patch
 Patch1:		x32.patch
