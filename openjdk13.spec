@@ -373,8 +373,8 @@ chmod a+x configure
 %configure \
 	%{?with_zero:--with-jvm-variants=zero} \
 	--with-boot-jdk="%{java_home}" \
-	--with-extra-cflags="%{rpmcppflags} %{rpmcflags} -fcommon" \
-	--with-extra-cxxflags="%{rpmcppflags} %{rpmcxxflags} -fcommon" \
+	--with-extra-cflags="%{rpmcppflags} %{rpmcflags} -fcommon -fno-tree-dse -std=gnu17" \
+	--with-extra-cxxflags="%{rpmcppflags} %{rpmcxxflags} -fcommon -fno-tree-dse" \
 	--with-extra-ldflags="%{rpmldflags}" \
 	--with-jni-libpath="%{_libdir}/java %{_libdir} /%{_lib}" \
 	--with-jvm-features="%{?with_shenandoahgc:shenandoahgc}" \
